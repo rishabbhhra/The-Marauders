@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af721111f43fe91ed5ca95d88def0230 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_af721111f43fe91ed5ca95d88def0230" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_af721111f43fe91ed5ca95d88def0230 = L.map(
+                "map_af721111f43fe91ed5ca95d88def0230",
+                {
+                    center: [22.9734, 78.6569],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_96f3543807c2f34c29ac51cb05c1ca8d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_96f3543807c2f34c29ac51cb05c1ca8d.addTo(map_af721111f43fe91ed5ca95d88def0230);
+        
+    
+            var feature_group_62b39cde3b03155da4077e26dd77c6b8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var polygon_e31d01b15e8344f4bfe60b8cae5d0008 = L.polygon(
+                [[23.7, 77.0], [23.7, 77.8], [22.9, 77.8], [22.9, 77.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_62b39cde3b03155da4077e26dd77c6b8);
+        
+    
+        var popup_10e481f1126f70229ce7aeec876ce1e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44938f857a17e189e9f3c04b07889419 = $(`<div id="html_44938f857a17e189e9f3c04b07889419" style="width: 100.0%; height: 100.0%;">Madhya Pradesh (sample forest polygon)</div>`)[0];
+                popup_10e481f1126f70229ce7aeec876ce1e1.setContent(html_44938f857a17e189e9f3c04b07889419);
+            
+        
+
+        polygon_e31d01b15e8344f4bfe60b8cae5d0008.bindPopup(popup_10e481f1126f70229ce7aeec876ce1e1)
+        ;
+
+        
+    
+    
+            var feature_group_26b9b19ec0fe1b0926491c4e397cf102 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_6491e28d5fca246ff95c4cb29bf5c085 = L.marker(
+                [23.2599, 77.4126],
+                {
+}
+            ).addTo(feature_group_26b9b19ec0fe1b0926491c4e397cf102);
+        
+    
+            var icon_e2866d7777808325938e18ff1fa868be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64b79c2990432b4fd6961e631eb23404 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae59f27901c939fb81811a1c8a1e6571 = $(`<div id="html_ae59f27901c939fb81811a1c8a1e6571" style="width: 100.0%; height: 100.0%;"><b>Claim 1</b><br>State: Madhya Pradesh<br>Status: -</div>`)[0];
+                popup_64b79c2990432b4fd6961e631eb23404.setContent(html_ae59f27901c939fb81811a1c8a1e6571);
+            
+        
+
+        marker_6491e28d5fca246ff95c4cb29bf5c085.bindPopup(popup_64b79c2990432b4fd6961e631eb23404)
+        ;
+
+        
+    
+    
+                marker_6491e28d5fca246ff95c4cb29bf5c085.setIcon(icon_e2866d7777808325938e18ff1fa868be);
+            
+    
+            feature_group_26b9b19ec0fe1b0926491c4e397cf102.addTo(map_af721111f43fe91ed5ca95d88def0230);
+        
+    
+            var feature_group_700569f74e05607e8c8989f9d2e6622b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_066d334ec632d7f9885143985a5c1e77 = L.circleMarker(
+                [23.5, 77.2],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_700569f74e05607e8c8989f9d2e6622b);
+        
+    
+        var popup_74c4b4dc6f146475e16ed0357baa3dd1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc253c7983a784110a0f44901013a44f = $(`<div id="html_cc253c7983a784110a0f44901013a44f" style="width: 100.0%; height: 100.0%;"><b>Settlement A</b><br>Pop: -</div>`)[0];
+                popup_74c4b4dc6f146475e16ed0357baa3dd1.setContent(html_cc253c7983a784110a0f44901013a44f);
+            
+        
+
+        circle_marker_066d334ec632d7f9885143985a5c1e77.bindPopup(popup_74c4b4dc6f146475e16ed0357baa3dd1)
+        ;
+
+        
+    
+    
+            var feature_group_76e8550ff2b59faef870a184c2ba6974 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var polygon_67e4061fda0c26b437d0c608a686e809 = L.polygon(
+                [[24.4, 91.6], [24.4, 92.4], [23.4, 92.4], [23.4, 91.6]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_76e8550ff2b59faef870a184c2ba6974);
+        
+    
+        var popup_f0aa8028cb0701e789a45c79b782a1ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdfd64901b98c13a89230be0c103b4cf = $(`<div id="html_cdfd64901b98c13a89230be0c103b4cf" style="width: 100.0%; height: 100.0%;">Tripura (sample forest polygon)</div>`)[0];
+                popup_f0aa8028cb0701e789a45c79b782a1ef.setContent(html_cdfd64901b98c13a89230be0c103b4cf);
+            
+        
+
+        polygon_67e4061fda0c26b437d0c608a686e809.bindPopup(popup_f0aa8028cb0701e789a45c79b782a1ef)
+        ;
+
+        
+    
+    
+            var feature_group_a375a5b8d7817603d5583b262ae83f22 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_66e90bdd2b88542e1c74b7817d227c89 = L.marker(
+                [23.9408, 91.9882],
+                {
+}
+            ).addTo(feature_group_a375a5b8d7817603d5583b262ae83f22);
+        
+    
+            var icon_481b726ec63014a38a6bce430d481904 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_028950194cbbf032405cc8c5c970c19c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1827ee5f5deaa65ee100e7e32c10f0f6 = $(`<div id="html_1827ee5f5deaa65ee100e7e32c10f0f6" style="width: 100.0%; height: 100.0%;"><b>Claim 4</b><br>State: Tripura<br>Status: -</div>`)[0];
+                popup_028950194cbbf032405cc8c5c970c19c.setContent(html_1827ee5f5deaa65ee100e7e32c10f0f6);
+            
+        
+
+        marker_66e90bdd2b88542e1c74b7817d227c89.bindPopup(popup_028950194cbbf032405cc8c5c970c19c)
+        ;
+
+        
+    
+    
+                marker_66e90bdd2b88542e1c74b7817d227c89.setIcon(icon_481b726ec63014a38a6bce430d481904);
+            
+    
+            feature_group_a375a5b8d7817603d5583b262ae83f22.addTo(map_af721111f43fe91ed5ca95d88def0230);
+        
+    
+            var feature_group_125948c53452d56cbe32cdb375a79767 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_1414b497b649eda9c0e90635324242a6 = L.circleMarker(
+                [23.7, 91.5],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_125948c53452d56cbe32cdb375a79767);
+        
+    
+        var popup_616abaf2dcf0c3535a9728f641674c84 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd98ce322a50a3073259c735d709d385 = $(`<div id="html_fd98ce322a50a3073259c735d709d385" style="width: 100.0%; height: 100.0%;"><b>Settlement D</b><br>Pop: -</div>`)[0];
+                popup_616abaf2dcf0c3535a9728f641674c84.setContent(html_fd98ce322a50a3073259c735d709d385);
+            
+        
+
+        circle_marker_1414b497b649eda9c0e90635324242a6.bindPopup(popup_616abaf2dcf0c3535a9728f641674c84)
+        ;
+
+        
+    
+    
+            var feature_group_086fcf5ee475edbdeaa5e79e611cc165 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var polygon_8ab722e5adcc460197dd01669a32219f = L.polygon(
+                [[21.4, 84.5], [21.4, 85.7], [20.6, 85.7], [20.6, 84.5]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_086fcf5ee475edbdeaa5e79e611cc165);
+        
+    
+        var popup_0c823e597983589aedcd80046fadcdae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bf9a9c3b0601d7ce986f6a7966c67f5 = $(`<div id="html_0bf9a9c3b0601d7ce986f6a7966c67f5" style="width: 100.0%; height: 100.0%;">Odisha (sample forest polygon)</div>`)[0];
+                popup_0c823e597983589aedcd80046fadcdae.setContent(html_0bf9a9c3b0601d7ce986f6a7966c67f5);
+            
+        
+
+        polygon_8ab722e5adcc460197dd01669a32219f.bindPopup(popup_0c823e597983589aedcd80046fadcdae)
+        ;
+
+        
+    
+    
+            var feature_group_eb40c0aa431d46f5cedb32fac7e86ecb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_7caa454c5ccd9d45a7eee89d33f51b49 = L.marker(
+                [20.9517, 85.0985],
+                {
+}
+            ).addTo(feature_group_eb40c0aa431d46f5cedb32fac7e86ecb);
+        
+    
+            var icon_0f0381725ec37e3127c812eb0807e916 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3896eed69691c601298ed24c7934b447 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac09c42456864c4b4abab5e5fcd543ad = $(`<div id="html_ac09c42456864c4b4abab5e5fcd543ad" style="width: 100.0%; height: 100.0%;"><b>Claim 2</b><br>State: Odisha<br>Status: -</div>`)[0];
+                popup_3896eed69691c601298ed24c7934b447.setContent(html_ac09c42456864c4b4abab5e5fcd543ad);
+            
+        
+
+        marker_7caa454c5ccd9d45a7eee89d33f51b49.bindPopup(popup_3896eed69691c601298ed24c7934b447)
+        ;
+
+        
+    
+    
+                marker_7caa454c5ccd9d45a7eee89d33f51b49.setIcon(icon_0f0381725ec37e3127c812eb0807e916);
+            
+    
+            feature_group_eb40c0aa431d46f5cedb32fac7e86ecb.addTo(map_af721111f43fe91ed5ca95d88def0230);
+        
+    
+            var feature_group_2b1116e012a8e39e84892dcdc692919b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_1af07550d8314d371789607ad6fff4f0 = L.circleMarker(
+                [20.8, 85.3],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b1116e012a8e39e84892dcdc692919b);
+        
+    
+        var popup_252ea70d9b32173d98b7d66479badef0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e58889ff9ddcf452387928190caad101 = $(`<div id="html_e58889ff9ddcf452387928190caad101" style="width: 100.0%; height: 100.0%;"><b>Settlement B</b><br>Pop: -</div>`)[0];
+                popup_252ea70d9b32173d98b7d66479badef0.setContent(html_e58889ff9ddcf452387928190caad101);
+            
+        
+
+        circle_marker_1af07550d8314d371789607ad6fff4f0.bindPopup(popup_252ea70d9b32173d98b7d66479badef0)
+        ;
+
+        
+    
+    
+            var feature_group_cac5643181cf73938534f437c4195897 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var polygon_96cda226bc10c222014784d2cab2ab72 = L.polygon(
+                [[18.0, 78.6], [18.0, 79.8], [16.6, 79.8], [16.6, 78.6]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(feature_group_cac5643181cf73938534f437c4195897);
+        
+    
+        var popup_ece00c90b0cae2ce7d699183e16cbb26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7322bdabfef7ce469623517d7378e1e = $(`<div id="html_d7322bdabfef7ce469623517d7378e1e" style="width: 100.0%; height: 100.0%;">Telangana (sample forest polygon)</div>`)[0];
+                popup_ece00c90b0cae2ce7d699183e16cbb26.setContent(html_d7322bdabfef7ce469623517d7378e1e);
+            
+        
+
+        polygon_96cda226bc10c222014784d2cab2ab72.bindPopup(popup_ece00c90b0cae2ce7d699183e16cbb26)
+        ;
+
+        
+    
+    
+            var feature_group_4af5a1a8fdeaeb0f3e72b249d37fc6d0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_113fd7c2261cb28c788e91e711c6e789 = L.marker(
+                [17.1232, 79.2088],
+                {
+}
+            ).addTo(feature_group_4af5a1a8fdeaeb0f3e72b249d37fc6d0);
+        
+    
+            var icon_e69c8939769201c8d648d2980bdc5a75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a10a05f2a764f4cbbbdace77b0c5aac8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24987ff29babe8d8ea92fd2f6b71f096 = $(`<div id="html_24987ff29babe8d8ea92fd2f6b71f096" style="width: 100.0%; height: 100.0%;"><b>Claim 3</b><br>State: Telangana<br>Status: -</div>`)[0];
+                popup_a10a05f2a764f4cbbbdace77b0c5aac8.setContent(html_24987ff29babe8d8ea92fd2f6b71f096);
+            
+        
+
+        marker_113fd7c2261cb28c788e91e711c6e789.bindPopup(popup_a10a05f2a764f4cbbbdace77b0c5aac8)
+        ;
+
+        
+    
+    
+                marker_113fd7c2261cb28c788e91e711c6e789.setIcon(icon_e69c8939769201c8d648d2980bdc5a75);
+            
+    
+            feature_group_4af5a1a8fdeaeb0f3e72b249d37fc6d0.addTo(map_af721111f43fe91ed5ca95d88def0230);
+        
+    
+            var feature_group_d5672cdc6445c9a905d41876f828a08d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_2a61eecdc1e621ebb5e1e42edb62bca3 = L.circleMarker(
+                [17.2, 79.4],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d5672cdc6445c9a905d41876f828a08d);
+        
+    
+        var popup_96f060c5139b29232dfd36d1b4f180a4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e965ba4f3878ca7273d0bcde499d1422 = $(`<div id="html_e965ba4f3878ca7273d0bcde499d1422" style="width: 100.0%; height: 100.0%;"><b>Settlement C</b><br>Pop: -</div>`)[0];
+                popup_96f060c5139b29232dfd36d1b4f180a4.setContent(html_e965ba4f3878ca7273d0bcde499d1422);
+            
+        
+
+        circle_marker_2a61eecdc1e621ebb5e1e42edb62bca3.bindPopup(popup_96f060c5139b29232dfd36d1b4f180a4)
+        ;
+
+        
+    
+    
+            var feature_group_62a838e210a2ee9312ea47e4063dcd95 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3926d327696a8787ad9c43435edc35a0 = L.marker(
+                [23.2599, 77.4126],
+                {
+}
+            ).addTo(feature_group_62a838e210a2ee9312ea47e4063dcd95);
+        
+    
+            var icon_d3ce7b4ec0676edca24bba10698cbb23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80a842427e4701d4648ed29dd33b8063 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_805f7c663d90a8bf5669c43f42e534d6 = $(`<div id="html_805f7c663d90a8bf5669c43f42e534d6" style="width: 100.0%; height: 100.0%;">Claim 1 (Madhya Pradesh) - -</div>`)[0];
+                popup_80a842427e4701d4648ed29dd33b8063.setContent(html_805f7c663d90a8bf5669c43f42e534d6);
+            
+        
+
+        marker_3926d327696a8787ad9c43435edc35a0.bindPopup(popup_80a842427e4701d4648ed29dd33b8063)
+        ;
+
+        
+    
+    
+                marker_3926d327696a8787ad9c43435edc35a0.setIcon(icon_d3ce7b4ec0676edca24bba10698cbb23);
+            
+    
+            var marker_8cb8fde7ec7e400215d7af5c8077b202 = L.marker(
+                [20.9517, 85.0985],
+                {
+}
+            ).addTo(feature_group_62a838e210a2ee9312ea47e4063dcd95);
+        
+    
+            var icon_5cbbdb73a90373e4bc911a01e9ce6e2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_417778093722ffa526d4568400e52faa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_112efe51d182f599160940948241af15 = $(`<div id="html_112efe51d182f599160940948241af15" style="width: 100.0%; height: 100.0%;">Claim 2 (Odisha) - -</div>`)[0];
+                popup_417778093722ffa526d4568400e52faa.setContent(html_112efe51d182f599160940948241af15);
+            
+        
+
+        marker_8cb8fde7ec7e400215d7af5c8077b202.bindPopup(popup_417778093722ffa526d4568400e52faa)
+        ;
+
+        
+    
+    
+                marker_8cb8fde7ec7e400215d7af5c8077b202.setIcon(icon_5cbbdb73a90373e4bc911a01e9ce6e2c);
+            
+    
+            var marker_8e9d58ed8582f381eb60d5dfde9b12b1 = L.marker(
+                [17.1232, 79.2088],
+                {
+}
+            ).addTo(feature_group_62a838e210a2ee9312ea47e4063dcd95);
+        
+    
+            var icon_68d290284a456c9c98f73fab0f0b9e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dbabe8818a20ea4e7575b917cc4715e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60e3eb100880a4df7599adcb156acdc8 = $(`<div id="html_60e3eb100880a4df7599adcb156acdc8" style="width: 100.0%; height: 100.0%;">Claim 3 (Telangana) - -</div>`)[0];
+                popup_2dbabe8818a20ea4e7575b917cc4715e.setContent(html_60e3eb100880a4df7599adcb156acdc8);
+            
+        
+
+        marker_8e9d58ed8582f381eb60d5dfde9b12b1.bindPopup(popup_2dbabe8818a20ea4e7575b917cc4715e)
+        ;
+
+        
+    
+    
+                marker_8e9d58ed8582f381eb60d5dfde9b12b1.setIcon(icon_68d290284a456c9c98f73fab0f0b9e6e);
+            
+    
+            var marker_c729575bbdc612aa67831a4169608613 = L.marker(
+                [23.9408, 91.9882],
+                {
+}
+            ).addTo(feature_group_62a838e210a2ee9312ea47e4063dcd95);
+        
+    
+            var icon_d0bc2beb17d1e0b061c0733d909df9fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d0c5b4949fe6bb8ac4e33eb40bc4bb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb14c3ecc4e33972bbc4c9a2e1bdd32f = $(`<div id="html_fb14c3ecc4e33972bbc4c9a2e1bdd32f" style="width: 100.0%; height: 100.0%;">Claim 4 (Tripura) - -</div>`)[0];
+                popup_6d0c5b4949fe6bb8ac4e33eb40bc4bb8.setContent(html_fb14c3ecc4e33972bbc4c9a2e1bdd32f);
+            
+        
+
+        marker_c729575bbdc612aa67831a4169608613.bindPopup(popup_6d0c5b4949fe6bb8ac4e33eb40bc4bb8)
+        ;
+
+        
+    
+    
+                marker_c729575bbdc612aa67831a4169608613.setIcon(icon_d0bc2beb17d1e0b061c0733d909df9fd);
+            
+    
+            var layer_control_0fa35053565e286abd1b043986f99c03_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_96f3543807c2f34c29ac51cb05c1ca8d,
+                },
+                overlays :  {
+                    "Madhya Pradesh - Forest Areas" : feature_group_62b39cde3b03155da4077e26dd77c6b8,
+                    "Madhya Pradesh - Claims" : feature_group_26b9b19ec0fe1b0926491c4e397cf102,
+                    "Madhya Pradesh - Settlements" : feature_group_700569f74e05607e8c8989f9d2e6622b,
+                    "Tripura - Forest Areas" : feature_group_76e8550ff2b59faef870a184c2ba6974,
+                    "Tripura - Claims" : feature_group_a375a5b8d7817603d5583b262ae83f22,
+                    "Tripura - Settlements" : feature_group_125948c53452d56cbe32cdb375a79767,
+                    "Odisha - Forest Areas" : feature_group_086fcf5ee475edbdeaa5e79e611cc165,
+                    "Odisha - Claims" : feature_group_eb40c0aa431d46f5cedb32fac7e86ecb,
+                    "Odisha - Settlements" : feature_group_2b1116e012a8e39e84892dcdc692919b,
+                    "Telangana - Forest Areas" : feature_group_cac5643181cf73938534f437c4195897,
+                    "Telangana - Claims" : feature_group_4af5a1a8fdeaeb0f3e72b249d37fc6d0,
+                    "Telangana - Settlements" : feature_group_d5672cdc6445c9a905d41876f828a08d,
+                    "All Claims (overlay)" : feature_group_62a838e210a2ee9312ea47e4063dcd95,
+                },
+            };
+            let layer_control_0fa35053565e286abd1b043986f99c03 = L.control.layers(
+                layer_control_0fa35053565e286abd1b043986f99c03_layers.base_layers,
+                layer_control_0fa35053565e286abd1b043986f99c03_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_af721111f43fe91ed5ca95d88def0230);
+
+        
+</script>
+</html>
